@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var diceImage1: UIImageView!
     @IBOutlet weak var diceImage2: UIImageView!
+    @IBOutlet weak var textView: UITextField!
     
-
     @IBAction func ActionButton(_ sender: UIButton) {
         
         //This line below denotes that we have an array called the diceArray and it contains all the possible ice images
@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         //This line bwloe calls the array and .randomElement() chooses an random element from the array
         diceImage1.image = diceArray.randomElement()
         diceImage2.image = diceArray.randomElement()
+        
+        \
         
         //Similarly we can also use
         //diceImage2.image = diceArray[Int.random(in: 0...5)]
